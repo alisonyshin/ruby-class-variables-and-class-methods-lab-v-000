@@ -32,6 +32,7 @@ class Song
       @@artist_count[artist] =+ 1
     else
       @@artist_count[artist] = 1
+    end
   end
   
   def genre(genre)
@@ -40,6 +41,7 @@ class Song
       @@genres_count[genre] =+ 1
     else
       @@genres_count[genre] = 1
+    end
   end
   
 
