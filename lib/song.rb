@@ -20,4 +20,8 @@ class Song
     @@artists << artist unless @@artists include?(artist) 
   end
   
+  def genre(genre)
+    @@genres << genre unless @@genres include?(genre) 
+  end
+  
 end
