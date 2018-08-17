@@ -1,4 +1,4 @@
-
+require 'pry'
 
 class Song
   @@count = 0
@@ -35,6 +35,8 @@ class Song
   def self.genres
     @@genres.uniq
   end
+  
+  pry
   
   def self.artists
     @@artists.uniq
