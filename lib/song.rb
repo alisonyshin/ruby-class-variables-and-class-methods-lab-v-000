@@ -4,6 +4,8 @@ class Song
   @@count = 0
   @@artists = []
   @@genres = []
+  @@genre_count = {}
+  @@artist_count = {}
   
   attr_reader :name, :artist, :genre
   
@@ -41,15 +43,14 @@ class Song
   end
 
   def self.artist_count
-    @@artist_count = {}
-    @@genres.each {|genre|
-      if @@genre_count.keys.include?(genre)
-        @@genre_count[genre] += 1
+    @@artists.each {|artist|
+      if @@artist_count.keys.include?(artist)
+        @@artist_count[artist] += 1
       else
-        @@genre_count[genre] = 1
+        @@artist_count[artist] = 1
       end
     }
-    @@genre_count
+    @@artist_count
   end
   
 end
