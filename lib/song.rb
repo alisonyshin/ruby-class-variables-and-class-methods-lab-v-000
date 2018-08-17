@@ -36,8 +36,6 @@ class Song
     @@genres.uniq
   end
   
-  binding.pry
-  
   def self.artists
     @@artists.uniq
   end
