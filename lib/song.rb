@@ -45,14 +45,6 @@ class Song
     @@genres
   end
   
-  def artist(artist)
-
-  end
-  
-  def genre(genre)
-
-  end
-  
 
   
 end
