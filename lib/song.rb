@@ -14,6 +14,7 @@ class Song
     @@count += 1
     
     @@genres << genre
+    
     if @@genres_count.keys.include?(genre)
       @@genres_count[genre] =+ 1
     else
@@ -42,7 +43,7 @@ class Song
   end
   
   def self.genres
-    @@genres
+    @@genres.
   end
   
 
