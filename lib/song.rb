@@ -26,6 +26,10 @@ class Song
     @@genres_count
   end
   
+  def self.genres
+    @@genres
+  end
+  
   def artist(artist)
     @@artists << artist unless @@artists.include?(artist) 
     if @@artist_count.keys.include?(artist)
