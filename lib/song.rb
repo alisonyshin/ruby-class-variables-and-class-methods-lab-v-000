@@ -22,7 +22,7 @@ class Song
   
   def self.genre_count
     @@genre_count = {}
-    binding.pry
+
     @@genres.each do {|genre|
       if @@genre_count.keys.include?(genre)
         @@genre_count[genre] += 1
@@ -36,7 +36,7 @@ class Song
     @@genres.uniq
   end
   
-
+  binding.pry
   
   def self.artists
     @@artists.uniq
