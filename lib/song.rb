@@ -27,7 +27,7 @@ class Song
   end
   
   def artist(artist)
-    @@artists << artist unless @@artists include?(artist) 
+    @@artists << artist unless @@artists.include?(artist) 
     if @@artist_count.keys.include?(artist)
       @@artist_count[artist] =+ 1
     else
@@ -36,7 +36,7 @@ class Song
   end
   
   def genre(genre)
-    @@genres << genre unless @@genres include?(genre) 
+    @@genres << genre unless @@genres.include?(genre) 
     if @@genres_count.keys.include?(genre)
       @@genres_count[genre] =+ 1
     else
