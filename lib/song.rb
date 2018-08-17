@@ -25,7 +25,10 @@ class Song
   end
   
   def self.genre_count
-    @@genres_count
+    @@genre_count = {}
+    @@genres.map do {|genre|
+      if @@genre_count.keys.include?(genre)
+        @@genre_count[]
   end
   
   def self.genres
